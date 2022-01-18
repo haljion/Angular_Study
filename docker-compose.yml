@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  angular:
+    container_name: angular_study
+    build: .
+    volumes:
+      - .:/app
+    tty: true
+    ports:
+      - 4200:4200
